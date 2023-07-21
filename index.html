@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin-Fashion</title>
+    <link rel="shortcut icon" href="images/shopping.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f1100bdcbb.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .font-bebas{
             font-family: 'Bebas Neue', sans-serif;
         }
+
     </style>
 </head>
 <body>
-    <header class="bg-[#FFFBF0] p-28">
-        <nav>
-            <div class="haeder-logo ">
-
+    <header class="bg-[#FFFBF0] p-12">
+        <nav class="flex flex-col md:flex-row  justify-between ">
+            <div class="w-1/4">
+                <img src="icons/logo.png" alt="">
             </div>
-            <div class="header-image">
+            <div class="flex flex-col md:flex-row space-x-10 list-none font-medium font-bebas cursor-pointer">
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>PRODUCT</li>
+                <li>CONTACT US</li>
 
             </div>
         </nav>
         <!-- this is banner section -->
-        <div class="flex flex-col md:flex-row justify-around items-center">
+        <div class="flex flex-col md:flex-row justify-around items-center mt-5">
             <div class=".font-bebas">
                 <h3 class="text-7xl uppercase"><span class="text-[#FABE4C]">Be the Penguins</span><br>
                 of Winter</h3>
@@ -56,7 +66,7 @@
                         </div>
                 </div>
                 <div class="space-y-3 drop-shadow-lg">
-                    <div class="bg-[#F1F1F1] p-5 rounded-2xl">
+                    <div class="bg-[#F1F1F1] p-2 rounded-2xl">
                         <img src="images/jacket-1.png" alt="">
                     </div>
                     <h4 class="text-2xl font-bold">Yellow Coat Jacket </h4>
